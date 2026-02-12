@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV Vault | Genres</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --creme-bg: #FFFBF5; 
+            --box-creme: #F7EFE5; 
+            --espresso: #2D1B14; 
+            --accent: #D7CCC8;
+            --hover-color: #EADBC8; 
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background-color: var(--creme-bg);
+            color: var(--espresso);
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            padding-bottom: 80px;
+        }
+
+        header { padding: 80px 20px 40px; }
+        h1 { 
+            font-family: 'Cinzel', serif; 
+            font-size: 3rem; 
+            text-transform: uppercase; 
+            letter-spacing: 5px;
+            margin-bottom: 10px;
+        }
+        .tagline { font-size: 0.9rem; letter-spacing: 3px; text-transform: uppercase; color: #888; }
+
+        .genre-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .genre-box {
+            height: 280px;
+            background-color: var(--box-creme);
+            border: 2px solid var(--espresso);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            /* Static color transition only */
+            transition: background-color 0.3s ease; 
+        }
+
+        .genre-box:hover {
+            background-color: var(--hover-color);
+        }
+
+        .genre-box h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 1.6rem;
+            color: var(--espresso);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding: 20px;
+        }
+
+        .footer-nav { margin-top: 60px; }
+        .btn-home {
+            display: inline-block;
+            text-decoration: none;
+            color: var(--creme-bg);
+            background: var(--espresso);
+            padding: 15px 40px;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 2px;
+            font-size: 0.8rem;
+            border: 2px solid var(--espresso);
+            transition: all 0.3s ease;
+        }
+
+        .btn-home:hover {
+            background: transparent;
+            color: var(--espresso);
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2.2rem; }
+            .genre-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>TV Series Vault</h1>
+        <p class="tagline">From Small Screen to Big Impact</p>
+    </header>
+
+    <main class="genre-grid">
+        
+        <a href="crime.html" class="genre-box">
+            <h2>Crime & Action</h2>
+        </a>
+
+        <a href="romanceshows.html" class="genre-box">
+            <h2>Romance</h2>
+        </a>
+
+        <a href="scifi.html" class="genre-box">
+            <h2>Sci-Fi</h2>
+        </a>
+
+    </main>
+
+    <div class="footer-nav">
+        <a href="index.html" class="btn-home">Back to Home</a>
+    </div>
+
+</body>
+</html>

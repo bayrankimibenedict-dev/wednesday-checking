@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kimi Benedict Bayran | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cream-bg: #FFF8F0; 
+            --dark-espresso: #2D1B14;
+            --deep-brown: #5D4037;
+            --accent-tan: #D7CCC8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--cream-bg);
+            color: var(--dark-espresso);
+            font-family: 'Playfair Display', serif;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* --- NAVIGATION --- */
+        nav {
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px; /* Reduced gap for more items */
+            align-items: center;
+            flex-wrap: wrap; /* Allows links to wrap to a new line */
+            justify-content: center;
+            max-width: 1200px;
+        }
+
+        .nav-item {
+            position: relative;
+            padding-bottom: 5px;
+        }
+
+        .nav-item::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            background: var(--dark-espresso);
+            bottom: 0;
+            left: 0;
+            transform: scaleX(0); 
+            transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        .nav-item:hover::after {
+            transform: scaleX(1);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--dark-espresso);
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 0.8rem; /* Slightly smaller to fit all links */
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--deep-brown);
+        }
+
+        /* --- HERO SECTION --- */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 10% 120px 10%;
+            max-width: 1400px;
+            margin: 0 auto;
+            gap: 60px;
+        }
+
+        .hero-text { flex: 1; }
+
+        .name {
+            font-family: 'Cinzel', serif;
+            font-size: 5.5rem;
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 25px;
+            color: var(--dark-espresso);
+            letter-spacing: -2px;
+        }
+
+        .welcome-note {
+            font-family: 'Poppins', sans-serif;
+            color: var(--deep-brown);
+            font-size: 1.1rem;
+            letter-spacing: 6px;
+            margin-bottom: 20px;
+            display: block;
+            font-weight: 300;
+            text-transform: uppercase;
+        }
+
+        .motto {
+            font-size: 1.5rem;
+            line-height: 1.8;
+            max-width: 600px;
+            color: var(--dark-espresso);
+            font-style: italic;
+            border-top: 3px solid var(--dark-espresso);
+            padding-top: 30px;
+            margin-bottom: 40px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 40px;
+            background-color: var(--dark-espresso);
+            color: var(--cream-bg);
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: 0.3s;
+            border: 2px solid var(--dark-espresso);
+        }
+
+        .cta-button:hover {
+            background-color: transparent;
+            color: var(--dark-espresso);
+        }
+
+        .image-box {
+            position: relative;
+            width: 440px;
+            height: 580px; 
+            border: 3px solid var(--dark-espresso);
+            padding: 20px;
+            background: #FFF;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .image-box:hover {
+            transform: translateX(-10px);
+            box-shadow: 25px 25px 0px var(--dark-espresso);
+        }
+
+        @media (max-width: 1100px) {
+            .hero { flex-direction: column; text-align: center; }
+            .name { font-size: 3.8rem; }
+            .motto { margin: 0 auto 30px auto; }
+            .image-box { width: 340px; height: 460px; margin: 0 auto; }
+            nav ul { gap: 15px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li class="nav-item"><a href="biography.html">Biography</a></li>
+            <li class="nav-item"><a href="blog 1.html">AI sa Klase</a></li>
+            <li class="nav-item"><a href="blog 2.html">Korapsyon</a></li>
+            <li class="nav-item"><a href="blog 3.html">IT Career</a></li>
+            <li class="nav-item"><a href="index3.html">Beats</a></li>
+            <li class="nav-item"><a href="index4.html">Movies</a></li>
+            <li class="nav-item"><a href="index5.html">TV Shows</a></li>
+            <li class="nav-item"><a href="dreamplaces.html">Dream Places</a></li>
+            <li class="nav-item"><a href="bucketlist.html">Bucket List</a></li>
+            <li class="nav-item"><a href="contact.html">Contact</a></li>
+            <li class="nav-item"><a href="index2.html">Photo Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main class="hero">
+        <div class="hero-text">
+            <h1 class="name">Kimi Benedict<br>Bayran</h1>
+            <span class="welcome-note">Welcome to my personal website</span>
+            <p class="motto">
+                “In IT, every error is a lesson, every bug is progress, and every line of code brings you closer to mastery.”
+            </p>
+            <a href="biography.html" class="cta-button">Explore My Journey</a>
+        </div>
+
+        <div class="image-box">
+            <img src="profilepic.jpg" alt="Kimi Benedict Bayran">
+        </div>
+    </main>
+
+</body>
+</html>

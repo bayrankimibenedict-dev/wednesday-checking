@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery | Kimi Benedict Bayran</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cream-bg: #FFF8F0; 
+            --dark-espresso: #2D1B14;
+            --deep-brown: #5D4037;
+            --accent-tan: #D7CCC8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--cream-bg);
+            color: var(--dark-espresso);
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+            padding-bottom: 50px;
+        }
+
+        /* --- NAVIGATION --- */
+        .top-nav {
+            padding: 30px;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .back-link {
+            text-decoration: none;
+            color: var(--dark-espresso);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 2px solid var(--dark-espresso);
+            font-size: 0.8rem;
+            transition: 0.3s;
+        }
+
+        .back-link:hover {
+            color: var(--deep-brown);
+            padding-left: 5px;
+        }
+
+        /* --- HERO SECTION --- */
+        header {
+            text-align: center;
+            padding: 40px 20px 80px 20px;
+        }
+
+        .giant-title {
+            font-family: 'Cinzel', serif;
+            font-size: 8rem; 
+            font-weight: 900;
+            line-height: 0.9;
+            text-transform: uppercase;
+            letter-spacing: -4px;
+            margin-bottom: 20px;
+            color: var(--dark-espresso);
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            letter-spacing: 8px;
+            text-transform: uppercase;
+            color: var(--deep-brown);
+        }
+
+        /* --- GALLERY GRID --- */
+        .gallery-grid {
+            max-width: 1300px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            padding: 0 20px;
+        }
+
+        /* Entire Box as a Link */
+        .category-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .category-box {
+            background: #fff;
+            border: 2px solid var(--dark-espresso);
+            padding: 15px;
+            transition: all 0.4s ease;
+            height: 100%;
+        }
+
+        .category-box:hover {
+            box-shadow: 15px 15px 0px var(--dark-espresso);
+            transform: translate(-5px, -5px);
+        }
+
+        .img-container {
+            width: 100%;
+            height: 450px;
+            overflow: hidden;
+            background-color: var(--accent-tan);
+            margin-bottom: 20px;
+            border: 1px solid var(--dark-espresso);
+        }
+
+        .img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .category-box:hover img {
+            transform: scale(1.1);
+        }
+
+        .info-area {
+            text-align: left;
+            padding-bottom: 10px;
+        }
+
+        .category-name {
+            font-family: 'Cinzel', serif;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        /* --- GO TOP --- */
+        .go-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--dark-espresso);
+            color: white;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-family: 'Cinzel', serif;
+            font-weight: bold;
+            box-shadow: 5px 5px 0px var(--accent-tan);
+            z-index: 100;
+            transition: 0.3s;
+        }
+
+        .go-top:hover {
+            background: var(--deep-brown);
+        }
+
+        /* --- RESPONSIVE --- */
+        @media (max-width: 1100px) {
+            .giant-title { font-size: 5rem; letter-spacing: -2px; }
+        }
+
+        @media (max-width: 600px) {
+            .giant-title { font-size: 3.5rem; }
+            .gallery-grid { grid-template-columns: 1fr; }
+            .img-container { height: 350px; }
+        }
+    </style>
+</head>
+<body id="top">
+
+    <nav class="top-nav">
+        <a href="index.html" class="back-link">Return to Home</a>
+    </nav>
+
+    <header>
+        <h1 class="giant-title">Photo<br>Gallery</h1>
+        <p class="subtitle">Capturing Life's Moments</p>
+    </header>
+
+    <main class="gallery-grid">
+
+        <a href="myself.html" class="category-link">
+            <div class="category-box">
+                <div class="img-container">
+                    <img src="myselfpic1.jpg" alt="Myself">
+                </div>
+                <div class="info-area">
+                    <h2 class="category-name">Myself</h2>
+                    <p>Personal milestones and candid moments.</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="family.html" class="category-link">
+            <div class="category-box">
+                <div class="img-container">
+                    <img src="fampic5.jpg" alt="Family">
+                </div>
+                <div class="info-area">
+                    <h2 class="category-name">Family</h2>
+                    <p>The core of everything. Memories with the family.</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="trips.html" class="category-link">
+            <div class="category-box">
+                <div class="img-container">
+                    <img src="trippic1.jpg" alt="Trips">
+                </div>
+                <div class="info-area">
+                    <h2 class="category-name">Trips</h2>
+                    <p>Exploring new places and embracing adventures.</p>
+                </div>
+            </div>
+        </a>
+
+    </main>
+
+    <a href="#top" class="go-top">TOP</a>
+
+</body>
+</html>

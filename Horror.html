@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thriller & Horror | My Film Movies</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cream-bg: #F9F9F9; 
+            --dark-espresso: #1A1A1A; 
+            --slate-gray: #4A4A4A;
+            --accent-tan: #D7CCC8;
+            --hover-box: #F2F2F2; /* Subtle neutral hover color */
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background-color: var(--cream-bg);
+            color: var(--dark-espresso);
+            font-family: 'Poppins', sans-serif;
+            padding-bottom: 80px;
+        }
+
+        header { text-align: center; padding: 60px 20px 40px; }
+        h1 { 
+            font-family: 'Cinzel', serif; 
+            font-size: 3rem; 
+            text-transform: uppercase; 
+            border-bottom: 2px solid var(--dark-espresso); 
+            display: inline-block; 
+            padding-bottom: 10px; 
+        }
+        .category-sub { 
+            letter-spacing: 4px; 
+            color: var(--slate-gray); 
+            font-size: 0.9rem; 
+            margin-top: 15px; 
+            font-weight: 600; 
+            text-transform: uppercase; 
+        }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+
+        .movie-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 50px;
+        }
+
+        .movie-card {
+            background: #fff;
+            border: 2px solid var(--dark-espresso);
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            transition: background-color 0.3s ease; /* Transition background ONLY */
+        }
+
+        /* Hover: Color changes, but the card DOES NOT move */
+        .movie-card:hover { 
+            background-color: var(--hover-box);
+            box-shadow: 10px 10px 0px var(--accent-tan);
+        }
+
+        .poster-link { 
+            text-decoration: none; 
+            display: block; 
+            overflow: hidden; 
+            border: 1px solid var(--dark-espresso); 
+            margin-bottom: 20px; 
+            background: #000; 
+        }
+        
+        .poster {
+            width: 100%; 
+            height: 500px; 
+            object-fit: cover;
+            display: block;
+            /* Movement removed from poster hover */
+        }
+
+        .info h3 { font-family: 'Cinzel', serif; font-size: 1.6rem; color: var(--dark-espresso); margin-bottom: 5px; }
+        .year { font-weight: 600; color: var(--slate-gray); font-size: 0.9rem; margin-bottom: 10px; display: block; }
+        
+        .credits { font-size: 0.85rem; color: #333; font-weight: 600; margin-bottom: 5px; }
+        .stars { font-size: 0.8rem; color: #666; margin-bottom: 15px; font-style: italic; }
+        
+        .synopsis { 
+            font-size: 0.9rem; 
+            line-height: 1.7; 
+            color: #444; 
+            border-top: 1px solid #eee; 
+            padding-top: 15px; 
+            flex-grow: 1; 
+        }
+
+        .click-hint {
+            margin-top: 20px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: white;
+            background: var(--dark-espresso);
+            padding: 12px;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+
+        .footer-nav { text-align: center; margin-top: 80px; }
+        .btn-back {
+            text-decoration: none;
+            color: var(--dark-espresso);
+            padding: 15px 30px;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 2px;
+            border: 2px solid var(--dark-espresso);
+            transition: 0.3s;
+        }
+        .btn-back:hover { 
+            background: var(--dark-espresso); 
+            color: white; 
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Thriller & Horror</h1>
+        <p class="category-sub">Cinematic Suspense Archive</p>
+    </header>
+
+    <main class="container">
+        <div class="movie-grid">
+            
+            <div class="movie-card">
+                <a href="https://www.youtube.com/watch?v=YqNvXArWqlw" target="_blank" class="poster-link">
+                    <img src="Fractured.jpg" class="poster" alt="Fractured">
+                </a>
+                <div class="info">
+                    <h3>Fractured</h3>
+                    <span class="year">2019 • TV-MA</span>
+                    <p class="credits">DIRECTOR: Brad Anderson</p>
+                    <p class="stars">CAST: Sam Worthington, Lily Rabe</p>
+                    <p class="synopsis">A man’s wife and injured daughter vanish from a hospital ER. He becomes convinced the hospital is involved in a sinister conspiracy and must fight to find them.</p>
+                    <div class="click-hint">▶ CLICK PICTURE FOR CLIP</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <a href="https://www.youtube.com/watch?v=1giVzxyoclE" target="_blank" class="poster-link">
+                    <img src="seven.jpg" class="poster" alt="Se7en">
+                </a>
+                <div class="info">
+                    <h3>Se7en</h3>
+                    <span class="year">1995 • R</span>
+                    <p class="credits">DIRECTOR: David Fincher</p>
+                    <p class="stars">CAST: Morgan Freeman, Brad Pitt</p>
+                    <p class="synopsis">Two detectives hunt a serial killer who justifies his crimes as absolution for the world's ignorance of the Seven Deadly Sins.</p>
+                    <div class="click-hint">▶ CLICK PICTURE FOR CLIP</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <a href="https://www.youtube.com/watch?v=A4yc5sp_qP8" target="_blank" class="poster-link">
+                    <img src="Shutter Island.jpg" class="poster" alt="Shutter Island">
+                </a>
+                <div class="info">
+                    <h3>Shutter Island</h3>
+                    <span class="year">2010 • R</span>
+                    <p class="credits">DIRECTOR: Martin Scorsese</p>
+                    <p class="stars">CAST: Leonardo DiCaprio, Mark Ruffalo</p>
+                    <p class="synopsis">A U.S. Marshal arrives at an asylum on a remote island to investigate the disappearance of a patient, only to question his own sanity.</p>
+                    <div class="click-hint">▶ CLICK PICTURE FOR CLIP</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <a href="https://www.youtube.com/watch?v=Hs4xl5ildjM" target="_blank" class="poster-link">
+                    <img src="nun.jpg" class="poster" alt="The Nun">
+                </a>
+                <div class="info">
+                    <h3>The Nun</h3>
+                    <span class="year">2018 • R</span>
+                    <p class="credits">DIRECTOR: Corin Hardy</p>
+                    <p class="stars">CAST: Demián Bichir, Taissa Farmiga</p>
+                    <p class="synopsis">A priest and a novice investigate a suicide at a Romanian monastery and encounter a demonic force in the form of a nun.</p>
+                    <div class="click-hint">▶ CLICK PICTURE FOR CLIP</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <a href="https://www.youtube.com/watch?v=cq0B8ZLC7is" target="_blank" class="poster-link">
+                    <img src="nextdoor.jpg" class="poster" alt="The Boy Next Door">
+                </a>
+                <div class="info">
+                    <h3>The Boy Next Door</h3>
+                    <span class="year">2015 • R</span>
+                    <p class="credits">DIRECTOR: Rob Cohen</p>
+                    <p class="stars">CAST: Jennifer Lopez, Ryan Guzman</p>
+                    <p class="synopsis">A high school teacher’s brief encounter with a handsome neighbor turns into a dangerous obsession that threatens her career and family.</p>
+                    <div class="click-hint">▶ CLICK PICTURE FOR CLIP</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <a href="https://www.youtube.com/watch?v=BETu0Jt_xuY" target="_blank" class="poster-link">
+                    <img src="it.jpg" class="poster" alt="IT">
+                </a>
+                <div class="info">
+                    <h3>IT</h3>
+                    <span class="year">2017 • R</span>
+                    <p class="credits">DIRECTOR: Andy Muschietti</p>
+                    <p class="stars">CAST: Bill Skarsgård, Finn Wolfhard</p>
+                    <p class="synopsis">Children in a small town face their greatest fears when they square off against an ancient, shape-shifting evil that appears every 27 years.</p>
+                    <div class="click-hint">▶ CLICK PICTURE FOR CLIP</div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <div class="footer-nav">
+        <a href="index4.html" class="btn-back">Back to Genres</a>
+    </div>
+
+</body>
+</html>
