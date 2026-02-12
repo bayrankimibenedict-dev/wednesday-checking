@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romance & Comedy | My Film Movies</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cream-bg: #FFF8F0; 
+            --dark-espresso: #1a0f0a; 
+            --deep-brown: #2D1B14;
+            --accent-tan: #D7CCC8;
+            --rose: #8E5D5D;
+            --hover-box: #FDF2E9; /* Subtle color shift for hover */
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background-color: var(--cream-bg);
+            color: var(--dark-espresso);
+            font-family: 'Poppins', sans-serif;
+            padding-bottom: 80px;
+        }
+
+        header { text-align: center; padding: 60px 20px 40px; }
+        h1 { font-family: 'Cinzel', serif; font-size: 3rem; text-transform: uppercase; border-bottom: 2px solid var(--dark-espresso); display: inline-block; padding-bottom: 10px; }
+        .category-sub { letter-spacing: 4px; color: var(--rose); font-size: 0.9rem; margin-top: 15px; font-weight: 600; text-transform: uppercase; }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+
+        .movie-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 50px;
+        }
+
+        .movie-card {
+            background: white;
+            border: 2px solid var(--dark-espresso);
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            transition: background-color 0.3s ease; /* Color transition only */
+        }
+
+        /* Color change on hover with NO movement */
+        .movie-card:hover { 
+            background-color: var(--hover-box);
+        }
+
+        .poster-link { text-decoration: none; display: block; overflow: hidden; border: 1px solid var(--dark-espresso); margin-bottom: 20px; }
+        
+        .poster {
+            width: 100%; 
+            height: 500px; 
+            object-fit: cover;
+            display: block;
+        }
+
+        .info h3 { font-family: 'Cinzel', serif; font-size: 1.6rem; color: var(--dark-espresso); margin-bottom: 5px; }
+        .year { font-weight: 600; color: var(--rose); font-size: 0.9rem; margin-bottom: 10px; display: block; }
+        
+        .credits { font-size: 0.85rem; color: #333; font-weight: 600; margin-bottom: 5px; }
+        .stars { font-size: 0.8rem; color: #666; margin-bottom: 15px; font-style: italic; }
+        
+        .synopsis { font-size: 0.9rem; line-height: 1.7; color: #444; border-top: 1px solid #eee; padding-top: 15px; flex-grow: 1; }
+
+        .click-hint {
+            margin-top: 20px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: white;
+            background: var(--dark-espresso);
+            padding: 10px;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+
+        .footer-nav { text-align: center; margin-top: 80px; }
+        .btn-back {
+            text-decoration: none;
+            color: var(--dark-espresso);
+            padding: 15px 30px;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 2px;
+            border: 2px solid var(--dark-espresso);
+            transition: 0.3s;
+        }
+        .btn-back:hover { background: var(--dark-espresso); color: var(--cream-bg); }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Romance & Comedy</h1>
+        <p class="category-sub">Laughter, Tears & Everything In Between</p>
+    </header>
+
+    <main class="container">
+        <div class="movie-grid">
+            
+            <div class="movie-card">
+                <a href="https://www.youtube.com/watch?v=IOhG58THrUA" target="_blank" class="poster-link">
+                    <img src="howto.jpg" class="poster" alt="How to Lose a Guy in 10 Days">
+                </a>
+                <div class="info">
+                    <h3>How to Lose a Guy in 10 Days</h3>
+                    <span class="year">2003 • PG-13</span>
+                    <p class="credits">DIRECTOR: Donald Petrie</p>
+                    <p class="stars">CAST: Kate Hudson, Matthew McConaughey</p>
+                    <p class="synopsis">Andie Anderson tries to drive a man away in 10 days using classic dating mistakes, while Ben Barry bets he can make any woman fall in love with him.</p>
+                    <div class="click-hint">▶ CLICK THE PICTURE TO WATCH THE CLIP</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <a href="https://www.youtube.com/watch?v=z5SluxprhnA" target="_blank" class="poster-link">
+                    <img src="princess.jpg" class="poster" alt="The Princess Diaries">
+                </a>
+                <div class="info">
+                    <h3>The Princess Diaries</h3>
+                    <span class="year">2001 • G</span>
+                    <p class="credits">DIRECTOR: Garry Marshall</p>
+                    <p class="stars">CAST: Anne Hathaway, Julie Andrews</p>
+                    <p class="synopsis">Mia Thermopolis discovers she is the heir to the throne of Genovia and must decide between her life as a normal teen or her royal destiny.</p>
+                    <div class="click-hint">▶ CLICK THE PICTURE TO WATCH THE CLIP</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <a href="https://www.youtube.com/watch?v=-qdHE9-8spU" target="_blank" class="poster-link">
+                    <img src="devil.jpg" class="poster" alt="The Devil Wears Prada">
+                </a>
+                <div class="info">
+                    <h3>The Devil Wears Prada</h3>
+                    <span class="year">2006 • PG-13</span>
+                    <p class="credits">DIRECTOR: David Frankel</p>
+                    <p class="stars">CAST: Meryl Streep, Anne Hathaway, Emily Blunt</p>
+                    <p class="synopsis">A graduate lands a job as an assistant to a demanding fashion magazine editor, realizing fashion requires more than just hard work.</p>
+                    <div class="click-hint">▶ CLICK THE PICTURE TO WATCH THE CLIP</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <a href="https://www.youtube.com/watch?v=dGIGG6QLjLg" target="_blank" class="poster-link">
+                    <img src="notebook.jpg" class="poster" alt="The Notebook">
+                </a>
+                <div class="info">
+                    <h3>The Notebook</h3>
+                    <span class="year">2004 • PG-13</span>
+                    <p class="credits">DIRECTOR: Nick Cassavetes</p>
+                    <p class="stars">CAST: Ryan Gosling, Rachel McAdams</p>
+                    <p class="synopsis">An epic love story of Noah and Allie, who were separated by social class and war but remained bound by their hearts forever.</p>
+                    <div class="click-hint">▶ CLICK THE PICTURE TO WATCH THE CLIP</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <a href="https://www.youtube.com/watch?v=8eHLwgjZUH4" target="_blank" class="poster-link">
+                    <img src="five.jpg" class="poster" alt="Five Feet Apart">
+                </a>
+                <div class="info">
+                    <h3>Five Feet Apart</h3>
+                    <span class="year">2019 • PG-13</span>
+                    <p class="credits">DIRECTOR: Justin Baldoni</p>
+                    <p class="stars">CAST: Haley Lu Richardson, Cole Sprouse</p>
+                    <p class="synopsis">Two teenagers with cystic fibrosis fall in love, but their condition requires them to stay at least six feet apart at all times.</p>
+                    <div class="click-hint">▶ CLICK THE PICTURE TO WATCH THE CLIP</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <a href="https://www.youtube.com/watch?v=zOx-Q7EiuKc" target="_blank" class="poster-link">
+                    <img src="mebefore.jpg" class="poster" alt="Me Before You">
+                </a>
+                <div class="info">
+                    <h3>Me Before You</h3>
+                    <span class="year">2016 • PG-13</span>
+                    <p class="credits">DIRECTOR: Thea Sharrock</p>
+                    <p class="stars">CAST: Emilia Clarke, Sam Claflin</p>
+                    <p class="synopsis">A caregiver for a paralyzed wealthy banker shows him that life is still worth living, transforming both of their lives.</p>
+                    <div class="click-hint">▶ CLICK THE PICTURE TO WATCH THE CLIP</div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <div class="footer-nav">
+        <a href="index4.html" class="btn-back">Back to Genres</a>
+    </div>
+
+</body>
+</html>

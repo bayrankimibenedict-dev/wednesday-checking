@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sci-Fi | TV Vault</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cream-bg: #F8F9FA; 
+            --espresso: #1A1A1A; 
+            --galaxy-blue: #37474F;
+            --accent-tan: #D7CCC8;
+            --hover-bg: #ECEFF1; /* Static gray hover color */
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background-color: var(--cream-bg);
+            color: var(--espresso);
+            font-family: 'Poppins', sans-serif;
+            padding-bottom: 80px;
+        }
+
+        header { text-align: center; padding: 60px 20px 40px; }
+        h1 { 
+            font-family: 'Cinzel', serif; 
+            font-size: 3rem; 
+            text-transform: uppercase; 
+            border-bottom: 2px solid var(--espresso); 
+            display: inline-block; 
+            padding-bottom: 10px; 
+        }
+        .category-sub { letter-spacing: 4px; color: var(--galaxy-blue); font-size: 0.9rem; margin-top: 15px; font-weight: 600; text-transform: uppercase; }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+
+        .movie-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 50px;
+        }
+
+        .movie-card {
+            background: white;
+            border: 2px solid var(--espresso);
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            transition: background-color 0.3s ease; /* No movement movement */
+        }
+
+        /* Hover effect: Only background color and shadow changes */
+        .movie-card:hover { 
+            background-color: var(--hover-bg);
+            box-shadow: 10px 10px 0px var(--accent-tan);
+        }
+
+        .poster-link { 
+            text-decoration: none; 
+            display: block; 
+            overflow: hidden; 
+            border: 1px solid var(--espresso); 
+            margin-bottom: 20px; 
+            background: #000; 
+        }
+        
+        .poster {
+            width: 100%; 
+            height: 500px; 
+            object-fit: cover;
+            display: block;
+        }
+
+        .info h3 { font-family: 'Cinzel', serif; font-size: 1.6rem; color: var(--espresso); margin-bottom: 5px; }
+        .year { font-weight: 600; color: var(--galaxy-blue); font-size: 0.9rem; margin-bottom: 10px; display: block; }
+        
+        .credits { font-size: 0.85rem; color: #333; font-weight: 600; margin-bottom: 5px; }
+        .stars { font-size: 0.8rem; color: #666; margin-bottom: 15px; font-style: italic; }
+        
+        .synopsis { font-size: 0.9rem; line-height: 1.7; color: #444; border-top: 1px solid #eee; padding-top: 15px; flex-grow: 1; }
+
+        .click-hint {
+            margin-top: 20px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: white;
+            background: var(--espresso);
+            padding: 12px;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+
+        .footer-nav { text-align: center; margin-top: 80px; }
+        .btn-back {
+            text-decoration: none;
+            color: var(--espresso);
+            padding: 15px 30px;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 2px;
+            border: 2px solid var(--espresso);
+            transition: 0.3s;
+        }
+        .btn-back:hover { background: var(--espresso); color: #fff; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sci-Fi TV</h1>
+        <p class="category-sub">Alternate Realities & Distant Worlds</p>
+    </header>
+
+    <main class="container">
+        <div class="movie-grid">
+            
+            <div class="movie-card">
+                <a href="https://www.youtube.com/watch?v=mLfMZv6pgg4" target="_blank" class="poster-link">
+                    <img src="alice.jpg" class="poster" alt="Alice in Borderland">
+                </a>
+                <div class="info">
+                    <h3>Alice in Borderland</h3>
+                    <span class="year">TV-MA • Sci-Fi/Thriller</span>
+                    <p class="credits">DIRECTOR: Shinsuke Sato</p>
+                    <p class="stars">CAST: Kento Yamazaki, Tao Tsuchiya</p>
+                    <p class="synopsis">A gamer and his two friends find themselves in a deserted Tokyo, where they are forced to compete in dangerous games to survive.</p>
+                    <div class="click-hint">▶ CLICK THE PICTURE TO WATCH THE CLIP</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <a href="https://www.youtube.com/watch?v=ScHuEYxcG7E" target="_blank" class="poster-link">
+                    <img src="manifest.jpg" class="poster" alt="Manifest">
+                </a>
+                <div class="info">
+                    <h3>Manifest</h3>
+                    <span class="year">TV-14 • Sci-Fi/Drama</span>
+                    <p class="credits">CREATOR: Jeff Rake</p>
+                    <p class="stars">CAST: Melissa Roxburgh, Josh Dallas</p>
+                    <p class="synopsis">When a commercial airliner suddenly reappears after being missing for five years, those aboard must reintegrate into society while experiencing strange visions.</p>
+                    <div class="click-hint">▶ CLICK THE PICTURE TO WATCH THE CLIP</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <a href="https://www.youtube.com/watch?v=-lSXxbaCGq4" target="_blank" class="poster-link">
+                    <img src="wednesday.jpg" class="poster" alt="Wednesday">
+                </a>
+                <div class="info">
+                    <h3>Wednesday</h3>
+                    <span class="year">TV-14 • Sci-Fi/Fantasy</span>
+                    <p class="credits">DIRECTOR: Tim Burton</p>
+                    <p class="stars">CAST: Jenna Ortega, Gwendoline Christie</p>
+                    <p class="synopsis">While attending Nevermore Academy, Wednesday Addams attempts to master her emerging psychic ability and thwart a monstrous killing spree.</p>
+                    <div class="click-hint">▶ CLICK THE PICTURE TO WATCH THE CLIP</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <a href="https://www.youtube.com/watch?v=O5HQ1sZseKg" target="_blank" class="poster-link">
+                    <img src="strangerthings.jpg" class="poster" alt="Stranger Things">
+                </a>
+                <div class="info">
+                    <h3>Stranger Things</h3>
+                    <span class="year">TV-14 • Sci-Fi/Horror</span>
+                    <p class="credits">CREATORS: The Duffer Brothers</p>
+                    <p class="stars">CAST: Millie Bobby Brown, Finn Wolfhard, Winona Ryder</p>
+                    <p class="synopsis">When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.</p>
+                    <div class="click-hint">▶ CLICK THE PICTURE TO WATCH THE CLIP</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <a href="https://www.youtube.com/watch?v=xd8rPw2V_Vg" target="_blank" class="poster-link">
+                    <img src="the100.jpg" class="poster" alt="The 100">
+                </a>
+                <div class="info">
+                    <h3>The 100</h3>
+                    <span class="year">TV-14 • Sci-Fi/Drama</span>
+                    <p class="credits">DEVELOPED BY: Jason Rothenberg</p>
+                    <p class="stars">CAST: Eliza Taylor, Bob Morley</p>
+                    <p class="synopsis">Set ninety-seven years after a nuclear war has destroyed civilization, when a spaceship housing humanity's lone survivors sends one hundred juvenile delinquents back to Earth.</p>
+                    <div class="click-hint">▶ CLICK THE PICTURE TO WATCH THE CLIP</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <a href="https://www.youtube.com/watch?v=Bunm7Fo18J0" target="_blank" class="poster-link">
+                    <img src="lastofus.jpg" class="poster" alt="The Last of Us">
+                </a>
+                <div class="info">
+                    <h3>The Last of Us</h3>
+                    <span class="year">TV-MA • Sci-Fi/Drama</span>
+                    <p class="credits">CREATORS: Craig Mazin, Neil Druckmann</p>
+                    <p class="stars">CAST: Pedro Pascal, Bella Ramsey</p>
+                    <p class="synopsis">After a global pandemic destroys civilization, a hardened survivor takes charge of a 14-year-old girl who may be humanity's last hope.</p>
+                    <div class="click-hint">▶ CLICK THE PICTURE TO WATCH THE CLIP</div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <div class="footer-nav">
+        <a href="index5.html" class="btn-back">Back to TV Genres</a>
+    </div>
+
+</body>
+</html>

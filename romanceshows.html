@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romance | TV Vault</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cream-bg: #FFFBF9; 
+            --espresso: #2D1B14; 
+            --rose-muted: #A67B7B;
+            --accent-tan: #D7CCC8;
+            --hover-bg: #F9F0F0; /* Soft pink-tinted hover color */
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background-color: var(--cream-bg);
+            color: var(--espresso);
+            font-family: 'Poppins', sans-serif;
+            padding-bottom: 80px;
+        }
+
+        header { text-align: center; padding: 60px 20px 40px; }
+        h1 { 
+            font-family: 'Cinzel', serif; 
+            font-size: 3rem; 
+            text-transform: uppercase; 
+            border-bottom: 2px solid var(--espresso); 
+            display: inline-block; 
+            padding-bottom: 10px; 
+        }
+        .category-sub { letter-spacing: 4px; color: var(--rose-muted); font-size: 0.9rem; margin-top: 15px; font-weight: 600; text-transform: uppercase; }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+
+        .movie-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 50px;
+        }
+
+        .movie-card {
+            background: white;
+            border: 2px solid var(--espresso);
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            transition: background-color 0.3s ease; /* No movement transition */
+        }
+
+        /* Hover effect: Color changes, but box does not move or scale */
+        .movie-card:hover { 
+            background-color: var(--hover-bg);
+            box-shadow: 10px 10px 0px var(--accent-tan);
+        }
+
+        .poster-link { 
+            text-decoration: none; 
+            display: block; 
+            overflow: hidden; 
+            border: 1px solid var(--espresso); 
+            margin-bottom: 20px; 
+            background: #eee; 
+        }
+        
+        .poster {
+            width: 100%; 
+            height: 500px; 
+            object-fit: cover;
+            display: block;
+        }
+
+        .info h3 { font-family: 'Cinzel', serif; font-size: 1.6rem; color: var(--espresso); margin-bottom: 5px; }
+        .year { font-weight: 600; color: var(--rose-muted); font-size: 0.9rem; margin-bottom: 10px; display: block; }
+        
+        .credits { font-size: 0.85rem; color: #333; font-weight: 600; margin-bottom: 5px; }
+        .stars { font-size: 0.8rem; color: #666; margin-bottom: 15px; font-style: italic; }
+        
+        .synopsis { font-size: 0.9rem; line-height: 1.7; color: #444; border-top: 1px solid #eee; padding-top: 15px; flex-grow: 1; }
+
+        .click-hint {
+            margin-top: 20px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: white;
+            background: var(--espresso);
+            padding: 12px;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+
+        .footer-nav { text-align: center; margin-top: 80px; }
+        .btn-back {
+            text-decoration: none;
+            color: var(--espresso);
+            padding: 15px 30px;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 2px;
+            border: 2px solid var(--espresso);
+            transition: 0.3s;
+        }
+        .btn-back:hover { background: var(--espresso); color: #fff; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Romance TV</h1>
+        <p class="category-sub">Love, Heartbreak & Summer Nights</p>
+    </header>
+
+    <main class="container">
+        <div class="movie-grid">
+            
+            <div class="movie-card">
+                <a href="https://www.youtube.com/watch?v=KzjW7Uxz9Ew" target="_blank" class="poster-link">
+                    <img src="summer.jpg" class="poster" alt="The Summer I Turned Pretty">
+                </a>
+                <div class="info">
+                    <h3>The Summer I Turned Pretty</h3>
+                    <span class="year">TV-14 • Drama/Romance</span>
+                    <p class="credits">CREATOR: Jenny Han</p>
+                    <p class="stars">CAST: Lola Tung, Christopher Briney, Gavin Casalegno</p>
+                    <p class="synopsis">A love triangle between one girl and two brothers. A story about first love, first heartbreak, and the magic of that one perfect summer.</p>
+                    <div class="click-hint">▶ CLICK THE PICTURE TO WATCH THE CLIP</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <a href="https://www.youtube.com/watch?v=_peZJ9djEkw" target="_blank" class="poster-link">
+                    <img src="outer.jpg" class="poster" alt="Outer Banks">
+                </a>
+                <div class="info">
+                    <h3>Outer Banks</h3>
+                    <span class="year">TV-MA • Action/Romance</span>
+                    <p class="credits">CREATORS: Josh Pate, Jonas Pate</p>
+                    <p class="stars">CAST: Chase Stokes, Madelyn Cline</p>
+                    <p class="synopsis">A group of teenagers from the wrong side of the tracks stumble upon a treasure map that unearths a long-buried secret.</p>
+                    <div class="click-hint">▶ CLICK THE PICTURE TO WATCH THE CLIP</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <a href="https://www.youtube.com/watch?v=TaZ2kdYDWLk" target="_blank" class="poster-link">
+                    <img src="you.jpg" class="poster" alt="YOU">
+                </a>
+                <div class="info">
+                    <h3>YOU</h3>
+                    <span class="year">TV-MA • Thriller/Romance</span>
+                    <p class="credits">DEVELOPED BY: Greg Berlanti, Sera Gamble</p>
+                    <p class="stars">CAST: Penn Badgley, Victoria Pedretti</p>
+                    <p class="synopsis">A dangerously charming, intensely obsessive young man goes to extreme measures to insert himself into the lives of those he is transfixed by.</p>
+                    <div class="click-hint">▶ CLICK THE PICTURE TO WATCH THE CLIP</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <a href="https://www.youtube.com/watch?v=0nIb5P7cP78" target="_blank" class="poster-link">
+                    <img src="tangerines.jpg" class="poster" alt="When Life Gives You Tangerines">
+                </a>
+                <div class="info">
+                    <h3>When Life Gives You Tangerines</h3>
+                    <span class="year">TV-PG • K-Drama/Romance</span>
+                    <p class="credits">DIRECTOR: Kim Won-seok</p>
+                    <p class="stars">CAST: IU, Park Bo-gum</p>
+                    <p class="synopsis">Set in Jeju Island in the 1950s, a rebellious girl and a diligent boy navigate life and love against the backdrop of a changing world.</p>
+                    <div class="click-hint">▶ CLICK THE PICTURE TO WATCH THE CLIP</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <a href="https://www.youtube.com/watch?v=Q-rGIR3DdNk" target="_blank" class="poster-link">
+                    <img src="crash.jpg" class="poster" alt="Crash Landing on You">
+                </a>
+                <div class="info">
+                    <h3>Crash Landing on You</h3>
+                    <span class="year">TV-14 • K-Drama/Romance</span>
+                    <p class="credits">WRITER: Park Ji-eun</p>
+                    <p class="stars">CAST: Hyun Bin, Son Ye-jin</p>
+                    <p class="synopsis">A South Korean heiress paraglides into North Korea by accident and into the life of an army officer who decides to help her hide.</p>
+                    <div class="click-hint">▶ CLICK THE PICTURE TO WATCH THE CLIP</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <a href="https://www.youtube.com/watch?v=DcFkxXS8KUE" target="_blank" class="poster-link">
+                    <img src="emily.jpg" class="poster" alt="Emily in Paris">
+                </a>
+                <div class="info">
+                    <h3>Emily in Paris</h3>
+                    <span class="year">TV-MA • Comedy/Romance</span>
+                    <p class="credits">CREATOR: Darren Star</p>
+                    <p class="stars">CAST: Lily Collins, Ashley Park, Lucas Bravo</p>
+                    <p class="synopsis">A young American woman from Chicago is hired to provide an American perspective at a marketing firm in Paris.</p>
+                    <div class="click-hint">▶ CLICK THE PICTURE TO WATCH THE CLIP</div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <div class="footer-nav">
+        <a href="index5.html" class="btn-back">Back to TV Genres</a>
+    </div>
+
+</body>
+</html>
