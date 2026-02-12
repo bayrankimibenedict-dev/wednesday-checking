@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>War & Action | Extended Archives</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cream-bg: #FFF8F0; 
+            --dark-espresso: #1a0f0a; 
+            --deep-brown: #2D1B14;
+            --accent-tan: #D7CCC8;
+            --gold-text: #B8860B;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background-color: var(--cream-bg);
+            color: var(--dark-espresso);
+            font-family: 'Poppins', sans-serif;
+            padding-bottom: 80px;
+        }
+
+        header { text-align: center; padding: 60px 20px 40px; }
+        h1 { font-family: 'Cinzel', serif; font-size: 3rem; text-transform: uppercase; border-bottom: 2px solid var(--dark-espresso); display: inline-block; padding-bottom: 10px; }
+        .category-sub { letter-spacing: 4px; color: var(--deep-brown); font-size: 0.9rem; margin-top: 15px; font-weight: 600; text-transform: uppercase; }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+
+        .movie-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 50px;
+        }
+
+        .movie-card {
+            background: white;
+            border: 2px solid var(--dark-espresso);
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            transition: all 0.3s ease;
+        }
+
+        .movie-card:hover {
+            box-shadow: 10px 10px 0px var(--accent-tan);
+        }
+
+        .poster-link { text-decoration: none; display: block; overflow: hidden; border: 1px solid var(--dark-espresso); margin-bottom: 20px; }
+        
+        .poster {
+            width: 100%; 
+            height: 500px; 
+            object-fit: cover;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .poster-link:hover .poster { transform: scale(1.05); }
+
+        .info h3 { font-family: 'Cinzel', serif; font-size: 1.6rem; color: var(--dark-espresso); margin-bottom: 5px; }
+        .year { font-weight: 600; color: var(--gold-text); font-size: 0.9rem; margin-bottom: 10px; display: block; }
+        
+        .credits { font-size: 0.85rem; color: #333; font-weight: 600; margin-bottom: 5px; }
+        .stars { font-size: 0.8rem; color: #666; margin-bottom: 15px; font-style: italic; }
+        
+        .synopsis { font-size: 0.9rem; line-height: 1.7; color: #444; border-top: 1px solid #eee; padding-top: 15px; }
+
+        .click-hint {
+            margin-top: 20px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: white;
+            background: var(--dark-espresso);
+            padding: 10px;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+
+        .footer-nav { text-align: center; margin-top: 80px; }
+        .btn-back {
+            text-decoration: none;
+            color: var(--dark-espresso);
+            padding: 15px 30px;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 2px;
+            border: 2px solid var(--dark-espresso);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>War & Action</h1>
+        <p class="category-sub">Detailed Cinematic Archive</p>
+    </header>
+
+    <main class="container">
+        <div class="movie-grid">
+            
+            <div class="movie-card">
+                <a href="https://www.youtube.com/watch?v=5pBEnaBYwFI" target="_blank" class="poster-link">
+                    <img src="hacksaw.jpg" class="poster" alt="Hacksaw Ridge">
+                </a>
+                <div class="info">
+                    <h3>Hacksaw Ridge</h3>
+                    <span class="year">2016 • R</span>
+                    <p class="credits">DIRECTOR: Mel Gibson</p>
+                    <p class="stars">CAST: Andrew Garfield, Sam Worthington, Vince Vaughn</p>
+                    <p class="synopsis">The extraordinary true story of Desmond Doss who, in Okinawa during the bloodiest battle of WWII, saved 75 men without firing or carrying a gun. He was the only American soldier in WWII to fight on the front lines without a weapon, believing that while the war was justified, killing was nevertheless wrong.</p>
+                    <div class="click-hint">▶ CLICK THE PICTURE TO WATCH CLIP</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <a href="https://www.youtube.com/watch?v=uA1Qwytgtds" target="_blank" class="poster-link">
+                    <img src="london.jpg" class="poster" alt="London Has Fallen">
+                </a>
+                <div class="info">
+                    <h3>London Has Fallen</h3>
+                    <span class="year">2016 • R</span>
+                    <p class="credits">DIRECTOR: Babak Najafi</p>
+                    <p class="stars">CAST: Gerard Butler, Morgan Freeman, Aaron Eckhart</p>
+                    <p class="synopsis">After the British Prime Minister dies under mysterious circumstances, the world's leaders gather for his funeral. What begins as the most protected event on Earth turns into a deadly plot to kill the world's most powerful leaders, devastating the British capital and unleashing a terrifying vision of the future.</p>
+                    <div class="click-hint">▶ CLICK THE PICTURE TO WATCH CLIP</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <a href="https://www.youtube.com/watch?v=EMvEm2jKDKU" target="_blank" class="poster-link">
+                    <img src="sniper.jpg" class="poster" alt="American Sniper">
+                </a>
+                <div class="info">
+                    <h3>American Sniper</h3>
+                    <span class="year">2014 • R</span>
+                    <p class="credits">DIRECTOR: Clint Eastwood</p>
+                    <p class="stars">CAST: Bradley Cooper, Sienna Miller, Kyle Gallner</p>
+                    <p class="synopsis">Navy SEAL sniper Chris Kyle's pinpoint accuracy saves countless lives on the battlefield and turns him into a legend. However, after four tours of duty, Chris finds that it is the war, not the people of it, which he can't leave behind when he returns to his wife and kids.</p>
+                    <div class="click-hint">▶CLICK THE PICTURE TO WATCH CLIP</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <a href="https://www.youtube.com/watch?v=WqO0aIOzBkk" target="_blank" class="poster-link">
+                    <img src="lone.jpg" class="poster" alt="Lone Survivor">
+                </a>
+                <div class="info">
+                    <h3>Lone Survivor</h3>
+                    <span class="year">2013 • R</span>
+                    <p class="credits">DIRECTOR: Peter Berg</p>
+                    <p class="stars">CAST: Mark Wahlberg, Taylor Kitsch, Emile Hirsch</p>
+                    <p class="synopsis">Based on the failed mission "Operation Red Wings," four members of SEAL Team 10 are tasked with the mission to capture or kill notorious Taliban leader Ahmad Shah. Ambushed by enemy forces, the team is faced with an impossible moral decision that leads to a high-stakes battle for survival.</p>
+                    <div class="click-hint">▶CLICK THE PICTURE TO WATCH CLIP</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <a href="https://www.youtube.com/watch?v=M7YiM3nDAg8" target="_blank" class="poster-link">
+                    <img src="private.jpg" class="poster" alt="Saving Private Ryan">
+                </a>
+                <div class="info">
+                    <h3>Saving Private Ryan</h3>
+                    <span class="year">1998 • R</span>
+                    <p class="credits">DIRECTOR: Steven Spielberg</p>
+                    <p class="stars">CAST: Tom Hanks, Matt Damon, Vin Diesel</p>
+                    <p class="synopsis">Opening with the Allied invasion of Normandy on June 6, 1944, Captain John Miller and his squad are ordered to go behind enemy lines to find Private James Ryan, whose three brothers have been killed in combat. Surrounding the brutal reality of war, the men question the mission: why risk eight lives to save one?</p>
+                    <div class="click-hint">▶ CLICK THE PICTURE TO WATCH CLIP</div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <div class="footer-nav">
+        <a href="index4.html" class="btn-back">Back to Genres</a>
+    </div>
+
+</body>
+</html>

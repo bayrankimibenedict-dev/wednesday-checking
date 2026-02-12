@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taylor Swift | My Beats</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cream-bg: #FFF8F0; 
+            --dark-espresso: #1a0f0a; 
+            --deep-brown: #2D1B14;
+            --accent-tan: #D7CCC8;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background-color: var(--cream-bg);
+            color: var(--dark-espresso);
+            font-family: 'Poppins', sans-serif;
+            padding-bottom: 80px;
+        }
+
+        /* --- HEADER --- */
+        header { text-align: center; padding: 60px 20px 40px 20px; max-width: 800px; margin: 0 auto; }
+        
+        .profile-img {
+            width: 180px; 
+            height: 180px; 
+            border-radius: 50%; 
+            object-fit: cover; 
+            border: 3px solid var(--dark-espresso); 
+            margin-bottom: 20px;
+        }
+
+        h1 { font-family: 'Cinzel', serif; font-size: 3.5rem; text-transform: uppercase; }
+        .artist-sub { letter-spacing: 4px; color: var(--deep-brown); font-size: 0.9rem; margin-top: 10px; font-weight: 600; }
+        
+        .artist-bio { 
+            margin-top: 20px; 
+            font-size: 1rem; 
+            line-height: 1.6; 
+            color: #444;
+            font-style: italic;
+        }
+
+        /* --- CONTENT GRID --- */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .song-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        .song-card {
+            background: white;
+            border: 2px solid var(--dark-espresso);
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            transition: all 0.3s ease;
+        }
+
+        .song-card:hover {
+            background-color: #fffcf8;
+            box-shadow: 10px 10px 0px var(--accent-tan);
+        }
+
+        .album-header {
+            display: flex;
+            flex-direction: column; 
+            gap: 15px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* --- PORTRAIT ALBUM ART --- */
+        .album-art {
+            width: 100%; 
+            height: 450px; /* Taller height for Portrait look */
+            border: 1px solid var(--dark-espresso);
+            object-fit: cover;
+            background-color: var(--accent-tan);
+        }
+
+        .info h3 { font-family: 'Cinzel', serif; font-size: 1.5rem; line-height: 1.2; }
+        .info p { font-size: 0.9rem; color: var(--deep-brown); font-style: italic; margin-top: 5px; }
+
+        audio {
+            width: 100%;
+            height: 40px;
+            margin-top: auto; /* Keeps audio player at the bottom */
+            filter: sepia(20%) saturate(70%) grayscale(100%) contrast(90%) invert(100%);
+        }
+
+        .song-desc {
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: #444;
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+
+        /* --- BACK TO BEATS BUTTON --- */
+        .footer-nav { text-align: center; margin-top: 80px; }
+        .btn {
+            text-decoration: none;
+            color: var(--cream-bg);
+            background: var(--dark-espresso);
+            padding: 20px 50px;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 3px;
+            display: inline-block;
+            transition: all 0.3s ease;
+            border: 2px solid var(--dark-espresso);
+        }
+
+        .btn:hover { 
+            background: transparent;
+            color: var(--dark-espresso);
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2.5rem; }
+            .song-grid { grid-template-columns: 1fr; }
+            .album-art { height: 400px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="taylor1.jpg" alt="Taylor Swift" class="profile-img">
+        <h1>Taylor Swift</h1>
+        <p class="artist-sub">The Songwriter of a Generation</p>
+        <p class="artist-bio">
+            Taylor Swift is a globally renowned singer-songwriter celebrated for her narrative songwriting which often centers around her personal life. Throughout her record-breaking career, she has successfully crossed multiple genres including country, pop, and indie-folk.
+        </p>
+    </header>
+
+    <main class="container">
+        <div class="song-grid">
+            
+            <div class="song-card">
+                <div class="album-header">
+                    <img src="archerpic.jpg" class="album-art" alt="The Archer Portrait">
+                    <div class="info">
+                        <h3>The Archer</h3>
+                        <p>Album: Lover (2019)</p>
+                    </div>
+                </div>
+                <p class="song-desc">A vulnerable track exploring anxiety and the fear of losing people. A fan-favorite track 5.</p>
+                <audio controls>
+                    <source src="archer.mp4" type="audio/mpeg">
+                    Your browser does not support audio.
+                </audio>
+            </div>
+
+            <div class="song-card">
+                <div class="album-header">
+                    <img src="ricochetpic.jpg" class="album-art" alt="My Tears Ricochet Portrait">
+                    <div class="info">
+                        <h3>My Tears Ricochet</h3>
+                        <p>Album: folklore (2020)</p>
+                    </div>
+                </div>
+                <p class="song-desc">A haunting song about the ghost of a relationship and the bitterness of betrayal.</p>
+                <audio controls>
+                    <source src="ricochet.mp4" type="audio/mpeg">
+                    Your browser does not support audio.
+                </audio>
+            </div>
+
+            <div class="song-card">
+                <div class="album-header">
+                    <img src="ownkid.jpg" class="album-art" alt="You're On Your Own, Kid Portrait">
+                    <div class="info">
+                        <h3>Own Kid</h3>
+                        <p>Album: Midnights (2022)</p>
+                    </div>
+                </div>
+                <p class="song-desc">A coming-of-age anthem about finding strength within yourself after realizing you're on your own.</p>
+                <audio controls>
+                    <source src="ownkid.mp4" type="audio/mpeg">
+                    Your browser does not support audio.
+                </audio>
+            </div>
+
+        </div>
+    </main>
+
+    <div class="footer-nav">
+        <a href="index3.html" class="btn">Back to Beats</a>
+    </div>
+
+</body>
+</html>
