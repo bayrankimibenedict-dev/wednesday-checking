@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crime & Action | TV Vault</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cream-bg: #FDFDFD; 
+            --dark-steel: #121212; 
+            --slate: #455A64;
+            --accent-tan: #D7CCC8;
+            --hover-bg: #F5F5F5; /* Neutral hover color */
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background-color: var(--cream-bg);
+            color: var(--dark-steel);
+            font-family: 'Poppins', sans-serif;
+            padding-bottom: 80px;
+        }
+
+        header { text-align: center; padding: 60px 20px 40px; }
+        h1 { font-family: 'Cinzel', serif; font-size: 3rem; text-transform: uppercase; border-bottom: 2px solid var(--dark-steel); display: inline-block; padding-bottom: 10px; }
+        .category-sub { letter-spacing: 4px; color: var(--slate); font-size: 0.9rem; margin-top: 15px; font-weight: 600; text-transform: uppercase; }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+
+        .movie-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 50px;
+        }
+
+        .movie-card {
+            background: white;
+            border: 2px solid var(--dark-steel);
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            transition: background-color 0.3s ease; /* Transition color only */
+        }
+
+        /* Hover effect: No movement, just a subtle background color shift */
+        .movie-card:hover { 
+            background-color: var(--hover-bg);
+            box-shadow: 10px 10px 0px var(--accent-tan);
+        }
+
+        .poster-link { text-decoration: none; display: block; overflow: hidden; border: 1px solid var(--dark-steel); margin-bottom: 20px; background: #000; }
+        
+        .poster {
+            width: 100%; 
+            height: 500px; 
+            object-fit: cover;
+            display: block;
+        }
+
+        .info h3 { font-family: 'Cinzel', serif; font-size: 1.6rem; color: var(--dark-steel); margin-bottom: 5px; }
+        .year { font-weight: 600; color: var(--slate); font-size: 0.9rem; margin-bottom: 10px; display: block; }
+        
+        .credits { font-size: 0.85rem; color: #333; font-weight: 600; margin-bottom: 5px; }
+        .stars { font-size: 0.8rem; color: #666; margin-bottom: 15px; font-style: italic; }
+        
+        .synopsis { font-size: 0.9rem; line-height: 1.7; color: #444; border-top: 1px solid #eee; padding-top: 15px; flex-grow: 1; }
+
+        .click-hint {
+            margin-top: 20px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: white;
+            background: var(--dark-steel);
+            padding: 10px;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+
+        .footer-nav { text-align: center; margin-top: 80px; }
+        .btn-back {
+            text-decoration: none;
+            color: var(--dark-steel);
+            padding: 15px 30px;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 2px;
+            border: 2px solid var(--dark-steel);
+            transition: 0.3s;
+        }
+        .btn-back:hover { background: var(--dark-steel); color: #fff; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Crime & Action</h1>
+        <p class="category-sub">Tactical Hits & Criminal Minds</p>
+    </header>
+
+    <main class="container">
+        <div class="movie-grid">
+            
+            <div class="movie-card">
+                <a href="https://www.youtube.com/watch?v=v1xd4tIbTWo" target="_blank" class="poster-link">
+                    <img src="narcos.jpg" class="poster" alt="Narcos">
+                </a>
+                <div class="info">
+                    <h3>Narcos</h3>
+                    <span class="year">TV-MA • Crime/Drama</span>
+                    <p class="credits">CREATORS: Chris Brancato, Carlo Bernard</p>
+                    <p class="stars">CAST: Pedro Pascal, Wagner Moura</p>
+                    <p class="synopsis">A chronicled look at the criminal exploits of Colombian drug lord Pablo Escobar, as well as the many other drug kingpins who plagued the country through the years.</p>
+                    <div class="click-hint">▶ CLICK THE PICTURE TO WATCH THE CLIP</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <a href="https://www.youtube.com/watch?v=e0dea7qrLdk" target="_blank" class="poster-link">
+                    <img src="moneyheist.jpg" class="poster" alt="Money Heist">
+                </a>
+                <div class="info">
+                    <h3>Money Heist</h3>
+                    <span class="year">TV-MA • Action/Thriller</span>
+                    <p class="credits">CREATOR: Álex Pina</p>
+                    <p class="stars">CAST: Álvaro Morte, Úrsula Corberó</p>
+                    <p class="synopsis">An unusual group of robbers attempt to carry out the most perfect heist in Spanish history - stealing 2.4 billion euros from the Royal Mint of Spain.</p>
+                    <div class="click-hint">▶ CLICK THE PICTURE TO WATCH THE CLIP</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <a href="https://www.youtube.com/watch?v=3V1hRpKYfcA" target="_blank" class="poster-link">
+                    <img src="sealteam.jpg" class="poster" alt="SEAL Team">
+                </a>
+                <div class="info">
+                    <h3>SEAL Team</h3>
+                    <span class="year">TV-14 • Military Action</span>
+                    <p class="credits">CREATOR: Benjamin Cavell</p>
+                    <p class="stars">CAST: David Boreanaz, Max Thieriot</p>
+                    <p class="synopsis">Follows the professional and personal lives of the most elite unit of Navy SEALs as they train, plan, and execute the most dangerous, high-stakes missions.</p>
+                    <div class="click-hint">▶ CLICK THE PICTURE TO WATCH THE CLIP</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <a href="https://www.youtube.com/watch?v=SbAKYgfYET8" target="_blank" class="poster-link">
+                    <img src="squidgame.jpg" class="poster" alt="Squid Game">
+                </a>
+                <div class="info">
+                    <h3>Squid Game</h3>
+                    <span class="year">TV-MA • Thriller/Action</span>
+                    <p class="credits">CREATOR: Hwang Dong-hyuk</p>
+                    <p class="stars">CAST: Lee Jung-jae, Jung Ho-yeon</p>
+                    <p class="synopsis">Hundreds of cash-strapped players accept a strange invitation to compete in children's games. Inside, a tempting prize awaits with deadly high stakes.</p>
+                    <div class="click-hint">▶ CLICK THE PICTURE TO WATCH THE CLIP</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <a href="https://www.youtube.com/watch?v=OWpvwOApjHg" target="_blank" class="poster-link">
+                    <img src="blacklist.jpg" class="poster" alt="The Blacklist">
+                </a>
+                <div class="info">
+                    <h3>The Blacklist</h3>
+                    <span class="year">TV-14 • Crime/Thriller</span>
+                    <p class="credits">CREATOR: Jon Bokenkamp</p>
+                    <p class="stars">CAST: James Spader, Megan Boone</p>
+                    <p class="synopsis">A new FBI profiler, Elizabeth Keen, has her entire life uprooted when a mysterious criminal, Raymond Reddington, surrenders and insists on speaking only to her.</p>
+                    <div class="click-hint">▶CLICK THE PICTURE TO WATCH THE CLIP</div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <a href="https://www.youtube.com/watch?v=Yhq6DojoQQU" target="_blank" class="poster-link">
+                    <img src="nightagent.jpg" class="poster" alt="The Night Agent">
+                </a>
+                <div class="info">
+                    <h3>The Night Agent</h3>
+                    <span class="year">TV-MA • Action/Thriller</span>
+                    <p class="credits">CREATOR: Shawn Ryan</p>
+                    <p class="stars">CAST: Gabriel Basso, Luciane Buchanan</p>
+                    <p class="synopsis">A low-level FBI agent who works in the basement of the White House manning a phone that never rings until the night that it does, pulling him into a conspiracy.</p>
+                    <div class="click-hint">▶ CLICK THE PICTURE TO WATCH THE CLIP</div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <div class="footer-nav">
+        <a href="index5.html" class="btn-back">Back to TV Genres</a>
+    </div>
+
+</body>
+</html>
